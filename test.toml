@@ -1,0 +1,29 @@
+# credentials.toml
+
+# --- General Settings (Optional) ---
+# You can add global settings here if needed, like a default username
+default_username = "foo"
+
+# --- Credentials Array ---
+# Each [[credential]] block represents the settings for a single host/platform.
+
+# 1. GitHub Credential
+[[credential]]
+host = "github.com"
+protocol = "https"          # or "ssh", etc.
+username = "foo"
+token = "ghpat_xxxxxxxxxxx" # Use a Personal Access Token (PAT)
+
+# 2. GitLab Credential
+[[credential]]
+host = "gitlab.com"
+protocol = "https"
+username = "fooo"
+token = "glpat_xxxxxxxxxxx" # Use a PAT or application password
+
+# 3. Bitbucket Credential
+[[credential]]
+host = "bitbucket.org"
+protocol = "https"
+username = "foooo"
+token = "bbpat_xxxxxxxxxxx" # Use an App Password
